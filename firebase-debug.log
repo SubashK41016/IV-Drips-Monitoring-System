@@ -1,0 +1,31 @@
+[debug] [2026-02-27T06:06:18.688Z] ----------------------------------------------------------------------
+[debug] [2026-02-27T06:06:18.690Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Subash\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy --only hosting --project ivdripsmonitor --debug
+[debug] [2026-02-27T06:06:18.690Z] CLI Version:   15.8.0
+[debug] [2026-02-27T06:06:18.690Z] Platform:      win32
+[debug] [2026-02-27T06:06:18.691Z] Node Version:  v22.19.0
+[debug] [2026-02-27T06:06:18.691Z] Time:          Fri Feb 27 2026 11:36:18 GMT+0530 (India Standard Time)
+[debug] [2026-02-27T06:06:18.691Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2026-02-27T06:06:20.024Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2026-02-27T06:06:20.025Z] > authorizing via signed-in user (googi41016@gmail.com)
+[debug] [2026-02-27T06:06:20.025Z] [iam] checking project ivdripsmonitor for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2026-02-27T06:06:20.027Z] Checked if tokens are valid: true, expires at: 1772173625705
+[debug] [2026-02-27T06:06:20.027Z] Checked if tokens are valid: true, expires at: 1772173625705
+[debug] [2026-02-27T06:06:20.028Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/ivdripsmonitor:testIamPermissions [none]
+[debug] [2026-02-27T06:06:20.028Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/ivdripsmonitor:testIamPermissions  x-goog-user-project=ivdripsmonitor
+[debug] [2026-02-27T06:06:20.029Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/ivdripsmonitor:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2026-02-27T06:06:21.639Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/ivdripsmonitor:testIamPermissions 403
+[debug] [2026-02-27T06:06:21.640Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/ivdripsmonitor:testIamPermissions {"error":{"code":403,"message":"Caller does not have required permission to use project ivdripsmonitor. Grant the caller the roles/serviceusage.serviceUsageConsumer role, or a custom role with the serviceusage.services.use permission, by visiting https://console.developers.google.com/iam-admin/iam/project?project=ivdripsmonitor and then retry. Propagation of the new permission may take a few minutes.","status":"PERMISSION_DENIED","details":[{"@type":"type.googleapis.com/google.rpc.ErrorInfo","reason":"USER_PROJECT_DENIED","domain":"googleapis.com","metadata":{"service":"cloudresourcemanager.googleapis.com","consoleUrl":"https://console.developers.google.com/iam-admin/iam/project?project=ivdripsmonitor","consumer":"projects/ivdripsmonitor","containerInfo":"ivdripsmonitor"}},{"@type":"type.googleapis.com/google.rpc.LocalizedMessage","locale":"en-US","message":"Caller does not have required permission to use project ivdripsmonitor. Grant the caller the roles/serviceusage.serviceUsageConsumer role, or a custom role with the serviceusage.services.use permission, by visiting https://console.developers.google.com/iam-admin/iam/project?project=ivdripsmonitor and then retry. Propagation of the new permission may take a few minutes."},{"@type":"type.googleapis.com/google.rpc.Help","links":[{"description":"Google developer console IAM admin","url":"https://console.developers.google.com/iam-admin/iam/project?project=ivdripsmonitor"}]}]}}
+[debug] [2026-02-27T06:06:21.641Z] [iam] error while checking permissions, command may fail: Request to https://cloudresourcemanager.googleapis.com/v1/projects/ivdripsmonitor:testIamPermissions had HTTP Error: 403, Caller does not have required permission to use project ivdripsmonitor. Grant the caller the roles/serviceusage.serviceUsageConsumer role, or a custom role with the serviceusage.services.use permission, by visiting https://console.developers.google.com/iam-admin/iam/project?project=ivdripsmonitor and then retry. Propagation of the new permission may take a few minutes.
+[debug] [2026-02-27T06:06:21.641Z] Checked if tokens are valid: true, expires at: 1772173625705
+[debug] [2026-02-27T06:06:21.641Z] Checked if tokens are valid: true, expires at: 1772173625705
+[debug] [2026-02-27T06:06:21.642Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/ivdripsmonitor [none]
+[debug] [2026-02-27T06:06:22.393Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/ivdripsmonitor 403
+[debug] [2026-02-27T06:06:22.394Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/ivdripsmonitor {"error":{"code":403,"message":"The caller does not have permission","status":"PERMISSION_DENIED"}}
+[debug] [2026-02-27T06:06:22.394Z] Request to https://firebase.googleapis.com/v1beta1/projects/ivdripsmonitor had HTTP Error: 403, The caller does not have permission
+[debug] [2026-02-27T06:06:22.395Z] FirebaseError: Request to https://firebase.googleapis.com/v1beta1/projects/ivdripsmonitor had HTTP Error: 403, The caller does not have permission
+    at responseToError (C:\Users\Subash\AppData\Roaming\npm\node_modules\firebase-tools\lib\responseToError.js:53:12)
+    at RetryOperation._fn (C:\Users\Subash\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:330:77)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+[error] 
+[error] Error: Failed to get Firebase project ivdripsmonitor. Please make sure the project exists and your account has permission to access it.
